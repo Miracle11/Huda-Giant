@@ -1,11 +1,580 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GIANT STRIDE Travel & Tours Ltd. | Giant Strides. Global Reach.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-    <h1>Hello World! this is a travle agency website</h1>
+
+<body class="bg-white">
+    <!-- Header Section -->
+    <header class="sticky top-0 z-50 bg-white shadow-md transition-all duration-300">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="w-10 h-10 flex items-center justify-center mr-3">
+                        <img src="./img/logo.jpg" alt="">
+                    </div>
+
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home"
+                        class="text-[#102A43] font-medium hover:text-[#49B6A3] transition-colors nav-active">Home</a>
+                    <a href="#about" class="text-[#102A43] font-medium hover:text-[#49B6A3] transition-colors">About</a>
+                    <a href="#services"
+                        class="text-[#102A43] font-medium hover:text-[#49B6A3] transition-colors">Services</a>
+                    <a href="#destinations"
+                        class="text-[#102A43] font-medium hover:text-[#49B6A3] transition-colors">Destinations</a>
+                    <a href="#contact"
+                        class="text-[#102A43] font-medium hover:text-[#49B6A3] transition-colors">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden flex flex-col space-y-1.5 p-2">
+                    <span class="hamburger-line w-6 h-0.5 bg-[#102A43] rounded"></span>
+                    <span class="hamburger-line w-6 h-0.5 bg-[#102A43] rounded"></span>
+                    <span class="hamburger-line w-6 h-0.5 bg-[#102A43] rounded"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden hidden mt-4 pb-3">
+                <div class="flex flex-col space-y-4">
+                    <a href="#home"
+                        class="text-[#102A43] font-medium hover:text-[#49B6A3] transition-colors py-2 border-b border-gray-100 nav-active">Home</a>
+                    <a href="#about"
+                        class="text-[#102A43] font-medium hover:text-[#49B6A3] transition-colors py-2 border-b border-gray-100">About</a>
+                    <a href="#services"
+                        class="text-[#102A43] font-medium hover:text-[#49B6A3] transition-colors py-2 border-b border-gray-100">Services</a>
+                    <a href="#destinations"
+                        class="text-[#102A43] font-medium hover:text-[#49B6A3] transition-colors py-2 border-b border-gray-100">Destinations</a>
+                    <a href="#contact"
+                        class="text-[#102A43] font-medium hover:text-[#49B6A3] transition-colors py-2 border-b border-gray-100">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section Slider -->
+    <section id="home" class="py-8 md:py-12">
+        <div class="container mx-auto px-4 md:px-6 lg:px-8">
+            <!-- Card Container - Full width within container -->
+            <div
+                class="relative bg-white rounded-2xl shadow-2xl overflow-hidden h-[550px] md:h-[700px] lg:h-[750px] w-full">
+
+                <!-- Slides Container -->
+                <div class="relative h-full">
+                    <!-- Slide 1 -->
+                    <div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out"
+                        data-slide="1">
+                        <!-- Background Image with Much Darker Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/85 to-black/80 z-0"></div>
+                        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80"
+                            alt="World travel destination" class="absolute inset-0 w-full h-full object-cover z-0">
+
+                        <!-- Content Container -->
+                        <div class="relative z-10 h-full flex items-center">
+                            <div class="w-full px-6 md:px-10 lg:px-12">
+                                <div class="max-w-full">
+                                    <h2
+                                        class="text-2xl md:text-3xl lg:text-4xl font-montserrat font-normal text-white mb-3 md:mb-4 whitespace-nowrap">
+                                        Giant Strides. Global Reach.
+                                    </h2>
+                                    <h1
+                                        class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-montserrat font-bold text-white mb-6 md:mb-8 whitespace-nowrap">
+                                        Start Your Journey
+                                    </h1>
+                                    <a href="#contact"
+                                        class="btn-primary inline-block px-8 py-3 md:px-10 md:py-4 rounded-full font-bold text-base md:text-lg shadow-xl transform transition-transform hover:scale-105">
+                                        Start Your Journey
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out"
+                        data-slide="2">
+                        <!-- Background Image with Much Darker Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-l from-black/90 via-black/85 to-black/80 z-0"></div>
+                        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80"
+                            alt="Mountain landscape" class="absolute inset-0 w-full h-full object-cover z-0">
+
+                        <!-- Content Container (Different fixed position - right aligned) -->
+                        <div class="relative z-10 h-full flex items-center justify-end">
+                            <div class="w-full px-6 md:px-10 lg:px-12">
+                                <div class="max-w-full ml-auto text-right">
+                                    <h2
+                                        class="text-2xl md:text-3xl lg:text-4xl font-montserrat font-normal text-white mb-3 md:mb-4 whitespace-nowrap">
+                                        Giant Strides. Global Reach.
+                                    </h2>
+                                    <h1
+                                        class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-montserrat font-bold text-white mb-6 md:mb-8 whitespace-nowrap">
+                                        Begin Your Adventure
+                                    </h1>
+                                    <a href="#contact"
+                                        class="btn-primary inline-block px-8 py-3 md:px-10 md:py-4 rounded-full font-bold text-base md:text-lg shadow-xl transform transition-transform hover:scale-105">
+                                        Start Your Journey
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out"
+                        data-slide="3">
+                        <!-- Background Image with Much Darker Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/85 to-black/80 z-0"></div>
+                        <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2068&q=80"
+                            alt="Beach destination" class="absolute inset-0 w-full h-full object-cover z-0">
+
+                        <!-- Content Container (Different fixed position - bottom aligned) -->
+                        <div class="relative z-10 h-full flex items-end">
+                            <div class="w-full px-6 md:px-10 lg:px-12 pb-10 md:pb-16">
+                                <div class="max-w-full">
+                                    <h2
+                                        class="text-2xl md:text-3xl lg:text-4xl font-montserrat font-normal text-white mb-3 md:mb-4 whitespace-nowrap">
+                                        Giant Strides. Global Reach.
+                                    </h2>
+                                    <h1
+                                        class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-montserrat font-bold text-white mb-6 md:mb-8 whitespace-nowrap">
+                                        Discover The World
+                                    </h1>
+                                    <a href="#contact"
+                                        class="btn-primary inline-block px-8 py-3 md:px-10 md:py-4 rounded-full font-bold text-base md:text-lg shadow-xl transform transition-transform hover:scale-105">
+                                        Start Your Journey
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slider Indicators -->
+                    <div
+                        class="absolute bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex space-x-2 md:space-x-3">
+                        <button
+                            class="slide-indicator w-2 h-2 md:w-3 md:h-3 rounded-full bg-white transition-all active"
+                            data-slide="1"></button>
+                        <button
+                            class="slide-indicator w-2 h-2 md:w-3 md:h-3 rounded-full bg-white/60 hover:bg-white transition-all"
+                            data-slide="2"></button>
+                        <button
+                            class="slide-indicator w-2 h-2 md:w-3 md:h-3 rounded-full bg-white/60 hover:bg-white transition-all"
+                            data-slide="3"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition Section -->
+    <section class="py-16 md:py-24 bg-[#F8F9FA]">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center mb-12">
+                <h2 class="section-title text-3xl md:text-4xl font-bold mb-6">We simplify the giant steps so you can
+                    focus on the global experience.</h2>
+                <p class="text-xl text-[#4A4A4A]">From sacred pilgrimages to cross-continent business trips—we handle
+                    the logistics, so you can embrace the journey.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                <!-- Value Pillar 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover text-center">
+                    <div class="w-16 h-16 rounded-full bg-[#49B6A3]/10 flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl">🤝</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Trust</h3>
+                    <p class="text-[#4A4A4A]">Your journey is our commitment. With over a decade of experience, we've
+                        built our reputation on reliability and integrity, ensuring your travel plans are in safe hands
+                        from start to finish.</p>
+                </div>
+
+                <!-- Value Pillar 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover text-center">
+                    <div class="w-16 h-16 rounded-full bg-[#7FC843]/10 flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl">🔍</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Clarity</h3>
+                    <p class="text-[#4A4A4A]">No surprises, no hidden fees. We believe in transparent pricing and clear
+                        communication, providing you with detailed itineraries and straightforward terms for peace of
+                        mind.</p>
+                </div>
+
+                <!-- Value Pillar 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover text-center">
+                    <div class="w-16 h-16 rounded-full bg-[#102A43]/10 flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl">🎯</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Precision</h3>
+                    <p class="text-[#4A4A4A]">Meticulous organization and attention to detail. We coordinate every
+                        aspect of your journey—flights, accommodations, visas, and transfers—with clockwork precision.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Services Section -->
+    <section id="services" class="py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="section-title text-3xl md:text-4xl font-bold mb-4">Your Journey, Our Expertise</h2>
+                <p class="text-xl text-[#4A4A4A] max-w-3xl mx-auto">We specialize in the travels that matter
+                    most—pilgrimages, business trips, family visits, and educational tours—handled with the care and
+                    attention they deserve.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden card-hover h-full">
+                    <div class="md:flex h-full">
+                        <!-- Image Container with Fixed Aspect Ratio -->
+                        <div class="md:w-1/3 relative">
+                            <!-- Maintain 4:3 aspect ratio on mobile, full height on desktop -->
+                            <div class="relative h-0 pb-[75%] md:pb-0 md:h-full">
+                                <img src="./img/kaabah.jpg"
+                                    alt="Sacred Pilgrimages" class="absolute inset-0 w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 p-6 md:p-8">
+                            <h3 class="text-2xl font-bold mb-3 text-[#102A43]">Sacred Pilgrimages</h3>
+                            <p class="text-[#4A4A4A] mb-4">Specialized arrangements for Hajj, Umrah, and religious
+                                journeys. We handle all spiritual travel requirements with reverence and expertise.</p>
+                            <a href="#"
+                                class="text-[#49B6A3] font-semibold flex items-center hover:text-[#3a9282] transition-colors group">
+                                Learn More
+                                <i
+                                    class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Service Card 2 -->
+                <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden card-hover h-full">
+                    <div class="md:flex h-full">
+                        <!-- Image Container with Fixed Aspect Ratio -->
+                        <div class="md:w-1/3 relative">
+                            <!-- Maintain 4:3 aspect ratio on mobile, full height on desktop -->
+                            <div class="relative h-0 pb-[75%] md:pb-0 md:h-full">
+                                <img src="./img/business.jpg"
+                                    alt="Sacred Pilgrimages" class="absolute inset-0 w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 p-6 md:p-8">
+                            <h3 class="text-2xl font-bold mb-3 text-[#102A43]">Business Travel</h3>
+                            <p class="text-[#4A4A4A] mb-4">Seamless corporate travel solutions. From multi-city
+                                itineraries to visa processing, we ensure your business trips are productive and
+                                hassle-free.</p>
+                            <a href="#"
+                                class="text-[#49B6A3] font-semibold flex items-center hover:text-[#3a9282] transition-colors group">
+                                Learn More
+                                <i
+                                    class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden card-hover h-full">
+                    <div class="md:flex h-full">
+                        <!-- Image Container with Fixed Aspect Ratio -->
+                        <div class="md:w-1/3 relative">
+                            <!-- Maintain 4:3 aspect ratio on mobile, full height on desktop -->
+                            <div class="relative h-0 pb-[75%] md:pb-0 md:h-full">
+                                <img src="./img/family.jpg"
+                                    alt="Sacred Pilgrimages" class="absolute inset-0 w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 p-6 md:p-8">
+                            <h3 class="text-2xl font-bold mb-3 text-[#102A43]">Family & Visit Travel</h3>
+                            <p class="text-[#4A4A4A] mb-4">Reuniting families across continents. We manage all
+                                documentation and logistics for family visits with warmth and personal attention.</p>
+                            <a href="#"
+                                class="text-[#49B6A3] font-semibold flex items-center hover:text-[#3a9282] transition-colors group">
+                                Learn More
+                                <i
+                                    class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden card-hover h-full">
+                    <div class="md:flex h-full">
+                        <!-- Image Container with Fixed Aspect Ratio -->
+                        <div class="md:w-1/3 relative">
+                            <!-- Maintain 4:3 aspect ratio on mobile, full height on desktop -->
+                            <div class="relative h-0 pb-[75%] md:pb-0 md:h-full">
+                                <img src="./img/education.jpg"
+                                    alt="Sacred Pilgrimages" class="absolute inset-0 w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 p-6 md:p-8">
+                            <h3 class="text-2xl font-bold mb-3 text-[#102A43]">Educational Tours</h3>
+                            <p class="text-[#4A4A4A] mb-4">Transformative learning journeys. We design and execute
+                                educational tours that combine cultural immersion with academic enrichment.</p>
+                            <a href="#"
+                                class="text-[#49B6A3] font-semibold flex items-center hover:text-[#3a9282] transition-colors group">
+                                Learn More
+                                <i
+                                    class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="py-16 md:py-24 bg-[#F8F9FA]">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="section-title text-3xl md:text-4xl font-bold mb-4">Travelers Trust Us With Their Most
+                    Important Journeys</h2>
+                <p class="text-xl text-[#4A4A4A] max-w-3xl mx-auto">Hear from our clients about their experiences with
+                    Giant Stride Travel & Tours.</p>
+            </div>
+
+            <!-- Testimonial Slider/Grid -->
+            <div
+                class="testimonial-slider overflow-x-auto md:overflow-visible md:grid md:grid-cols-3 gap-8 pb-6 md:pb-0 flex md:block">
+                <!-- Testimonial 1 -->
+                <div class="min-w-[85%] md:min-w-0 bg-white p-8 rounded-2xl shadow-lg mr-6 md:mr-0 flex-shrink-0">
+                    <div class="flex items-center mb-6">
+                        <div
+                            class="w-12 h-12 rounded-full bg-gradient-to-r from-[#49B6A3] to-[#7FC843] flex items-center justify-center text-white font-bold text-xl mr-4">
+                            AM
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Ahmed Mohammed</h4>
+                            <p class="text-[#4A4A4A]">Hajj Pilgrimage, 2023</p>
+                        </div>
+                    </div>
+                    <p class="text-[#4A4A4A] italic">"Giant Stride made our Hajj journey spiritually fulfilling without
+                        the usual logistical headaches. Their attention to detail and 24/7 support gave us peace of mind
+                        throughout the pilgrimage."</p>
+                    <div class="mt-4 text-[#7FC843]">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="min-w-[85%] md:min-w-0 bg-white p-8 rounded-2xl shadow-lg mr-6 md:mr-0 flex-shrink-0">
+                    <div class="flex items-center mb-6">
+                        <div
+                            class="w-12 h-12 rounded-full bg-gradient-to-r from-[#102A43] to-[#49B6A3] flex items-center justify-center text-white font-bold text-xl mr-4">
+                            SK
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Sarah Khan</h4>
+                            <p class="text-[#4A4A4A]">Business Traveler</p>
+                        </div>
+                    </div>
+                    <p class="text-[#4A4A4A] italic">"As a frequent business traveler, I rely on Giant Stride for
+                        seamless multi-city itineraries. Their precision with visas and transfers saves me valuable time
+                        and reduces travel stress significantly."</p>
+                    <div class="mt-4 text-[#7FC843]">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="min-w-[85%] md:min-w-0 bg-white p-8 rounded-2xl shadow-lg mr-6 md:mr-0 flex-shrink-0">
+                    <div class="flex items-center mb-6">
+                        <div
+                            class="w-12 h-12 rounded-full bg-gradient-to-r from-[#7FC843] to-[#49B6A3] flex items-center justify-center text-white font-bold text-xl mr-4">
+                            JA
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">James & Aisha</h4>
+                            <p class="text-[#4A4A4A]">Family Reunion Travel</p>
+                        </div>
+                    </div>
+                    <p class="text-[#4A4A4A] italic">"Giant Stride handled all the complex documentation for our
+                        international family reunion. Their personalized service made what could have been a stressful
+                        process remarkably smooth."</p>
+                    <div class="mt-4 text-[#7FC843]">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider Dots (Mobile only) -->
+            <div class="flex justify-center mt-8 md:hidden">
+                <div class="w-3 h-3 rounded-full bg-[#49B6A3] mx-1"></div>
+                <div class="w-3 h-3 rounded-full bg-gray-300 mx-1"></div>
+                <div class="w-3 h-3 rounded-full bg-gray-300 mx-1"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="contact" class="py-16 md:py-24 bg-[#102A43] text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Are you ready for your Giant Stride?</h2>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-10">Let us handle the complexities of your next
+                important journey. Contact us today for personalized travel planning.</p>
+            <a href="#contact-form"
+                class="btn-primary inline-block px-10 py-5 rounded-full font-bold text-xl shadow-xl">Contact Us
+                Today</a>
+
+            <!-- Contact Form (simplified) -->
+            <div id="contact-form" class="mt-16 max-w-2xl mx-auto bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+                <h3 class="text-2xl font-bold mb-6">Start Planning Your Journey</h3>
+                <form id="contactForm" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <input type="text" placeholder="Your Name"
+                            class="bg-white/20 border border-white/30 rounded-full px-6 py-4 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#7FC843]">
+                        <input type="email" placeholder="Your Email"
+                            class="bg-white/20 border border-white/30 rounded-full px-6 py-4 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#7FC843]">
+                    </div>
+                    <select
+                        class="w-full bg-white/20 border border-white/30 rounded-full px-6 py-4 text-white focus:outline-none focus:ring-2 focus:ring-[#7FC843]">
+                        <option value="" disabled selected>Select Travel Type</option>
+                        <option value="pilgrimage">Pilgrimage (Hajj/Umrah)</option>
+                        <option value="business">Business Travel</option>
+                        <option value="family">Family Visit</option>
+                        <option value="education">Educational Tour</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <textarea placeholder="Tell us about your travel plans..." rows="4"
+                        class="w-full bg-white/20 border border-white/30 rounded-3xl px-6 py-4 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#7FC843]"></textarea>
+                    <button type="submit" class="btn-primary w-full py-4 rounded-full font-bold text-lg">Send
+                        Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0A1929] text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <!-- Column 1: Logo & Mission -->
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="w-20 h-20 flex items-center justify-center mr-3">
+                            <img src="./img/logo.jpg" alt="">
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6">Giant Strides. Global Reach. We navigate the complexities of global
+                        travel so you can focus on what matters most.</p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-[#102A43] flex items-center justify-center hover:bg-[#49B6A3] transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-[#102A43] flex items-center justify-center hover:bg-[#49B6A3] transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-[#102A43] flex items-center justify-center hover:bg-[#49B6A3] transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-[#102A43] flex items-center justify-center hover:bg-[#49B6A3] transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-[#49B6A3]">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-300 hover:text-[#7FC843] transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-[#7FC843] transition-colors">About Us</a>
+                        </li>
+                        <li><a href="#services" class="text-gray-300 hover:text-[#7FC843] transition-colors">Our
+                                Services</a></li>
+                        <li><a href="#destinations"
+                                class="text-gray-300 hover:text-[#7FC843] transition-colors">Destinations</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-[#7FC843] transition-colors">Contact
+                                Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact Info -->
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-[#49B6A3]">Contact Info</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-[#7FC843] mr-3 mt-1"></i>
+                            <span class="text-gray-300">123 Travel Street, Global City, GC 10001</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone text-[#7FC843] mr-3"></i>
+                            <span class="text-gray-300">+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-[#7FC843] mr-3"></i>
+                            <span class="text-gray-300">info@giantstride-travel.com</span>
+                        </li>
+                        <li class="flex items-start mt-6">
+                            <i class="fas fa-clock text-[#7FC843] mr-3 mt-1"></i>
+                            <div>
+                                <p class="text-gray-300 font-semibold">Business Hours</p>
+                                <p class="text-gray-400 text-sm">Mon-Fri: 9am-6pm</p>
+                                <p class="text-gray-400 text-sm">Sat: 10am-4pm</p>
+                                <p class="text-gray-400 text-sm">Sun: Closed</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="pt-8 border-t border-gray-800">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">&copy; 2023 GIANT STRIDE Travel & Tours Ltd. All
+                        rights reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-[#7FC843] text-sm transition-colors">Privacy
+                            Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-[#7FC843] text-sm transition-colors">Terms of
+                            Service</a>
+                        <a href="#" class="text-gray-400 hover:text-[#7FC843] text-sm transition-colors">Cookie
+                            Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
