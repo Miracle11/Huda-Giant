@@ -191,3 +191,5 @@
             // Initialize slider when DOM is loaded
             initSlider();
         });
+
+        

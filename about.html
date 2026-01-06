@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT US | Giant Strides. Global Reach.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="bg-white">
+    <!-- Header Section -->
+    <header class="sticky top-0 z-50 bg-white shadow-md transition-all duration-300">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="w-10 h-10 flex items-center justify-center mr-3">
+                        <img src="./img/logo.jpg" alt="">
+                    </div>
+
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="/index.html"
+                        class="text-[#102A43] font-medium hover:text-[#49B6A3] transition-colors">Home</a>
+                    <a href="/about.html" class="text-[#49B6A3] font-bold hover:text-[#49B6A3] transition-colors">About</a>
+                    <a href="/services.html"
+                        class="text-[#102A43] font-medium hover:text-[#49B6A3] transition-colors">Services</a>
+                    <a href="/destinations.html"
+                        class="text-[#102A43] font-medium hover:text-[#49B6A3] transition-colors">Destinations</a>
+                    <a href="/contact.html"
+                        class="text-[#102A43] font-medium hover:text-[#49B6A3] transition-colors">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden flex flex-col space-y-1.5 p-2">
+                    <span class="hamburger-line w-6 h-0.5 bg-[#102A43] rounded"></span>
+                    <span class="hamburger-line w-6 h-0.5 bg-[#102A43] rounded"></span>
+                    <span class="hamburger-line w-6 h-0.5 bg-[#102A43] rounded"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden hidden mt-4 pb-3">
+                <div class="flex flex-col space-y-4">
+                    <a href="/index.html"
+                        class="text-[#102A43] font-medium hover:text-[#49B6A3] transition-colors py-2 border-b border-gray-100">Home</a>
+                    <a href="/about.html"
+                        class="text-[#49B6A3] font-bold hover:text-[#49B6A3] transition-colors py-2 border-b border-gray-100">About</a>
+                    <a href="/services.html"
+                        class="text-[#102A43] font-medium hover:text-[#49B6A3] transition-colors py-2 border-b border-gray-100">Services</a>
+                    <a href="/destinations.html"
+                        class="text-[#102A43] font-medium hover:text-[#49B6A3] transition-colors py-2 border-b border-gray-100">Destinations</a>
+                    <a href="/contact.html"
+                        class="text-[#102A43] font-medium hover:text-[#49B6A3] transition-colors py-2 border-b border-gray-100">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+        <!-- About Page -->
+    <section class="min-h-screen bg-white">
+        <!-- A. Hero Section -->
+        <section class="relative py-16 md:py-24">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                <div class="relative bg-white rounded-2xl shadow-2xl overflow-hidden h-[500px] md:h-[600px] lg:h-[650px] w-full">
+                    <!-- Background Image with Darker Overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/85 to-black/80 z-0"></div>
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                        alt="Team planning global travel" 
+                        class="absolute inset-0 w-full h-full object-cover z-0">
+                    
+                    <!-- Content Container -->
+                    <div class="relative z-10 h-full flex items-center">
+                        <div class="w-full px-6 md:px-10 lg:px-12">
+                            <div class="max-w-3xl">
+                                <h1 class="text-4xl md:text-5xl lg:text-6xl font-montserrat font-bold text-white mb-6 leading-tight">
+                                    More Than Travel Experts—<br>Your Trusted Journey Partners
+                                </h1>
+                                <p class="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed">
+                                    Building confidence through clarity, precision, and professional excellence since our founding.
+                                </p>
+                                
+                                <!-- Journey Path Graphic -->
+                                <div class="flex items-center mt-12">
+                                    <div class="w-8 h-8 rounded-full bg-[#7FC843] border-4 border-white shadow-lg"></div>
+                                    <div class="h-1 w-24 bg-gradient-to-r from-[#7FC843] to-[#49B6A3]"></div>
+                                    <div class="w-8 h-8 rounded-full bg-[#49B6A3] border-4 border-white shadow-lg"></div>
+                                    <div class="h-1 w-24 bg-gradient-to-r from-[#49B6A3] to-[#102A43]"></div>
+                                    <div class="w-8 h-8 rounded-full bg-[#102A43] border-4 border-white shadow-lg"></div>
+                                    <div class="ml-4">
+                                        <span class="text-white font-semibold">Your Journey Path</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- B. Who We Are Section -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <!-- Content -->
+                        <div>
+                            <h2 class="section-title text-3xl md:text-4xl font-bold mb-8">Who We Are</h2>
+                            <div class="space-y-6">
+                                <p class="text-lg text-[#4A4A4A] leading-relaxed">
+                                    Travel is more than transportation—it's transformation. Yet for many travelers, the process becomes confusing, stressful, or risky.
+                                </p>
+                                <p class="text-lg text-[#4A4A4A] leading-relaxed">
+                                    We founded Huda Giant Stride on principles that change this reality: <span class="font-semibold text-[#102A43]">Organization, Ethical Service, Professional Excellence, Clarity, and Transparency.</span>
+                                </p>
+                                <p class="text-lg text-[#4A4A4A] leading-relaxed">
+                                    Our team of dedicated professionals brings together decades of experience in travel logistics, cultural understanding, and global network management to ensure every journey is executed with precision.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Image -->
+                        <div class="rounded-2xl overflow-hidden shadow-2xl h-[400px]">
+                            <img src="https://images.unsplash.com/photo-1551836026-d5c2e7b4d6c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                                alt="Team collaboration" 
+                                class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- C. Mission & Vision Section -->
+        <section class="py-16 md:py-24 bg-gradient-to-r from-[#102A43] to-[#1a365d] text-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <!-- Mission -->
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-10 border border-white/20">
+                            <div class="flex items-center mb-6">
+                                <div class="w-16 h-16 rounded-full bg-gradient-to-r from-[#7FC843] to-[#49B6A3] flex items-center justify-center mr-6">
+                                    <span class="text-3xl">🎯</span>
+                                </div>
+                                <h3 class="text-2xl md:text-3xl font-bold">Our Mission</h3>
+                            </div>
+                            <p class="text-lg md:text-xl leading-relaxed">
+                                To simplify complex travel processes and deliver clear, ethical, and professionally organized travel experiences—empowering our clients to travel fearlessly.
+                            </p>
+                        </div>
+                        
+                        <!-- Vision -->
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-10 border border-white/20">
+                            <div class="flex items-center mb-6">
+                                <div class="w-16 h-16 rounded-full bg-gradient-to-r from-[#49B6A3] to-[#7FC843] flex items-center justify-center mr-6">
+                                    <span class="text-3xl">🌍</span>
+                                </div>
+                                <h3 class="text-2xl md:text-3xl font-bold">Our Vision</h3>
+                            </div>
+                            <p class="text-lg md:text-xl leading-relaxed">
+                                To be the most trusted and professional travel partner in the region, redefining travel confidence and setting the standard for excellence in complex itineraries.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- D. Our Promise: The Giant Stride Commitment -->
+        <section class="py-16 md:py-24 bg-[#F8F9FA]">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="section-title text-3xl md:text-4xl font-bold mb-4">Our Promise: The Giant Stride Commitment</h2>
+                        <p class="text-xl text-[#4A4A4A] max-w-3xl mx-auto">
+                            Every journey with us is backed by three unwavering commitments:
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Commitment 1 -->
+                        <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                            <div class="w-20 h-20 rounded-full bg-gradient-to-r from-[#102A43]/10 to-[#49B6A3]/10 flex items-center justify-center mb-6 mx-auto">
+                                <span class="text-4xl">🛡️</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-center mb-4">Expertise</h3>
+                            <p class="text-[#4A4A4A] text-center">
+                                You need a guide. We guarantee organized, safe, and fulfilling travel backed by experienced professionals who understand the intricacies of every journey type.
+                            </p>
+                        </div>
+                        
+                        <!-- Commitment 2 -->
+                        <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                            <div class="w-20 h-20 rounded-full bg-gradient-to-r from-[#7FC843]/10 to-[#49B6A3]/10 flex items-center justify-center mb-6 mx-auto">
+                                <span class="text-4xl">🔍</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-center mb-4">Clarity</h3>
+                            <p class="text-[#4A4A4A] text-center">
+                                No hidden fees, no surprises. We provide transparent packages and clear communication for all travel types—from sacred pilgrimages to corporate retreats.
+                            </p>
+                        </div>
+                        
+                        <!-- Commitment 3 -->
+                        <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                            <div class="w-20 h-20 rounded-full bg-gradient-to-r from-[#102A43]/10 to-[#7FC843]/10 flex items-center justify-center mb-6 mx-auto">
+                                <span class="text-4xl">🌐</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-center mb-4">Global Reach</h3>
+                            <p class="text-[#4A4A4A] text-center">
+                                Your ambitions span borders; our capabilities match them. We handle world-class logistics and local expertise for destinations worldwide.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- E. Our Team Section -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="section-title text-3xl md:text-4xl font-bold mb-4">Leadership Team</h2>
+                        <p class="text-xl text-[#4A4A4A] max-w-3xl mx-auto">
+                            The professionals guiding your journey
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Team Member 1 -->
+                        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden card-hover">
+                            <div class="h-64 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                    alt="Huda Mahamat Saleh" 
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <div class="mb-2">
+                                    <span class="inline-block bg-[#49B6A3]/10 text-[#49B6A3] text-sm font-semibold px-3 py-1 rounded-full">
+                                        Founder & CEO
+                                    </span>
+                                </div>
+                                <h3 class="text-2xl font-bold mb-3 text-[#102A43]">Huda Mahamat Saleh</h3>
+                                <p class="text-[#4A4A4A] mb-4">
+                                    Visionary leader establishing the framework of professionalism, operational structure, and global opportunity that defines Huda Giant Stride. With over 15 years in travel logistics, she ensures every journey reflects our highest standards.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Team Member 2 -->
+                        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden card-hover">
+                            <div class="h-64 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                    alt="Hajiya Maryam" 
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <div class="mb-2">
+                                    <span class="inline-block bg-[#7FC843]/10 text-[#7FC843] text-sm font-semibold px-3 py-1 rounded-full">
+                                        Chief Operations Officer
+                                    </span>
+                                </div>
+                                <h3 class="text-2xl font-bold mb-3 text-[#102A43]">Hajiya Maryam</h3>
+                                <p class="text-[#4A4A4A] mb-4">
+                                    Oversees daily operations with meticulous attention to detail, ensuring efficiency, clarity, and precision in every client interaction. Her leadership transforms complex itineraries into seamless experiences.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Team Member 3 -->
+                        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden card-hover">
+                            <div class="h-64 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                    alt="Mahamat Saleh Ahmat" 
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <div class="mb-2">
+                                    <span class="inline-block bg-[#102A43]/10 text-[#102A43] text-sm font-semibold px-3 py-1 rounded-full">
+                                        Non-Executive Director
+                                    </span>
+                                </div>
+                                <h3 class="text-2xl font-bold mb-3 text-[#102A43]">Mahamat Saleh Ahmat</h3>
+                                <p class="text-[#4A4A4A] mb-4">
+                                    Provides strategic direction, governance oversight, and long-term planning expertise. His guidance ensures sustainable growth and continued excellence in service delivery.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- F. Why Choose Us Section -->
+        <section class="py-16 md:py-24 bg-gradient-to-br from-[#49B6A3]/10 via-white to-[#7FC843]/10">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="section-title text-3xl md:text-4xl font-bold mb-4">Why Travelers Choose Huda Giant Stride</h2>
+                        <p class="text-xl text-[#4A4A4A] max-w-3xl mx-auto">
+                            Discover the distinct advantages that make us the preferred choice for discerning travelers
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Benefit 1 -->
+                        <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-gray-100 shadow-sm">
+                            <div class="flex items-start mb-4">
+                                <div class="w-10 h-10 rounded-full bg-[#49B6A3]/20 flex items-center justify-center mr-4 flex-shrink-0">
+                                    <span class="text-[#49B6A3] text-xl">✓</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-[#102A43]">Specialized Knowledge</h3>
+                            </div>
+                            <p class="text-[#4A4A4A]">
+                                Deep expertise in complex travel requirements for pilgrimages, educational tours, and business logistics.
+                            </p>
+                        </div>
+                        
+                        <!-- Benefit 2 -->
+                        <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-gray-100 shadow-sm">
+                            <div class="flex items-start mb-4">
+                                <div class="w-10 h-10 rounded-full bg-[#7FC843]/20 flex items-center justify-center mr-4 flex-shrink-0">
+                                    <span class="text-[#7FC843] text-xl">✓</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-[#102A43]">End-to-End Management</h3>
+                            </div>
+                            <p class="text-[#4A4A4A]">
+                                We handle everything from visa processing and accommodations to transportation and itinerary planning.
+                            </p>
+                        </div>
+                        
+                        <!-- Benefit 3 -->
+                        <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-gray-100 shadow-sm">
+                            <div class="flex items-start mb-4">
+                                <div class="w-10 h-10 rounded-full bg-[#49B6A3]/20 flex items-center justify-center mr-4 flex-shrink-0">
+                                    <span class="text-[#49B6A3] text-xl">✓</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-[#102A43]">Local & Global Networks</h3>
+                            </div>
+                            <p class="text-[#4A4A4A]">
+                                Established partnerships with trusted providers worldwide for seamless local experiences.
+                            </p>
+                        </div>
+                        
+                        <!-- Benefit 4 -->
+                        <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-gray-100 shadow-sm">
+                            <div class="flex items-start mb-4">
+                                <div class="w-10 h-10 rounded-full bg-[#102A43]/20 flex items-center justify-center mr-4 flex-shrink-0">
+                                    <span class="text-[#102A43] text-xl">✓</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-[#102A43]">Personalized Service</h3>
+                            </div>
+                            <p class="text-[#4A4A4A]">
+                                Dedicated travel managers providing customized attention for individual and group travel needs.
+                            </p>
+                        </div>
+                        
+                        <!-- Benefit 5 -->
+                        <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-gray-100 shadow-sm">
+                            <div class="flex items-start mb-4">
+                                <div class="w-10 h-10 rounded-full bg-[#7FC843]/20 flex items-center justify-center mr-4 flex-shrink-0">
+                                    <span class="text-[#7FC843] text-xl">✓</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-[#102A43]">24/7 Support</h3>
+                            </div>
+                            <p class="text-[#4A4A4A]">
+                                Round-the-clock assistance during travel with emergency support and real-time problem solving.
+                            </p>
+                        </div>
+                        
+                        <!-- Benefit 6 -->
+                        <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-gray-100 shadow-sm">
+                            <div class="flex items-start mb-4">
+                                <div class="w-10 h-10 rounded-full bg-[#49B6A3]/20 flex items-center justify-center mr-4 flex-shrink-0">
+                                    <span class="text-[#49B6A3] text-xl">✓</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-[#102A43]">Ethical Business Practices</h3>
+                            </div>
+                            <p class="text-[#4A4A4A]">
+                                Transparent pricing, honest communication, and commitment to sustainable tourism principles.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- G. Final CTA Section -->
+        <section class="py-16 md:py-24 bg-gradient-to-r from-[#102A43] to-[#1a365d] text-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Travel with Confidence?</h2>
+                    <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-10">
+                        Let's plan your next Giant Stride together. Our team is ready to transform your travel aspirations into reality.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                        <a href="#contact" 
+                        class="btn-primary inline-block px-10 py-4 rounded-full font-bold text-lg shadow-xl transform transition-transform hover:scale-105">
+                            Contact Our Team
+                        </a>
+                        <a href="#services" 
+                        class="inline-block px-10 py-4 rounded-full font-bold text-lg bg-white/10 backdrop-blur-sm border border-white/30 text-white hover:bg-white/20 transition-all">
+                            View Our Services
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0A1929] text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <!-- Column 1: Logo & Mission -->
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="w-20 h-20 flex items-center justify-center mr-3">
+                            <img src="./img/logo.jpg" alt="">
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6">Giant Strides. Global Reach. We navigate the complexities of global
+                        travel so you can focus on what matters most.</p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-[#102A43] flex items-center justify-center hover:bg-[#49B6A3] transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-[#102A43] flex items-center justify-center hover:bg-[#49B6A3] transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-[#102A43] flex items-center justify-center hover:bg-[#49B6A3] transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-[#102A43] flex items-center justify-center hover:bg-[#49B6A3] transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-[#49B6A3]">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="/index.html" class="text-gray-300 hover:text-[#7FC843] transition-colors">Home</a></li>
+                        <li><a href="/about.html" class="text-gray-300 hover:text-[#7FC843] transition-colors">About Us</a>
+                        </li>
+                        <li><a href="/services.html" class="text-gray-300 hover:text-[#7FC843] transition-colors">Our
+                                Services</a></li>
+                        <li><a href="/destinations.html"
+                                class="text-gray-300 hover:text-[#7FC843] transition-colors">Destinations</a></li>
+                        <li><a href="/contact.html" class="text-gray-300 hover:text-[#7FC843] transition-colors">Contact
+                                Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact Info -->
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-[#49B6A3]">Contact Info</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-[#7FC843] mr-3 mt-1"></i>
+                            <span class="text-gray-300">123 Travel Street, Global City, GC 10001</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone text-[#7FC843] mr-3"></i>
+                            <span class="text-gray-300">+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-[#7FC843] mr-3"></i>
+                            <span class="text-gray-300">info@giantstride-travel.com</span>
+                        </li>
+                        <li class="flex items-start mt-6">
+                            <i class="fas fa-clock text-[#7FC843] mr-3 mt-1"></i>
+                            <div>
+                                <p class="text-gray-300 font-semibold">Business Hours</p>
+                                <p class="text-gray-400 text-sm">Mon-Fri: 9am-6pm</p>
+                                <p class="text-gray-400 text-sm">Sat: 10am-4pm</p>
+                                <p class="text-gray-400 text-sm">Sun: Closed</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="pt-8 border-t border-gray-800">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">&copy; 2023 GIANT STRIDE Travel & Tours Ltd. All
+                        rights reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-[#7FC843] text-sm transition-colors">Privacy
+                            Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-[#7FC843] text-sm transition-colors">Terms of
+                            Service</a>
+                        <a href="#" class="text-gray-400 hover:text-[#7FC843] text-sm transition-colors">Cookie
+                            Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT US | Giant Strides. Global Reach.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="bg-white">
+    <!-- Header Section -->
+    <header class="sticky top-0 z-50 bg-white shadow-md transition-all duration-300">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="w-10 h-10 flex items-center justify-center mr-3">
+                        <img src="./img/logo.jpg" alt="">
+                    </div>
+
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="/index.html"
+                        class="text-[#102A43] font-medium hover:text-[#49B6A3] transition-colors">Home</a>
+                    <a href="/about.html" class="text-[#102A43] font-medium hover:text-[#49B6A3] transition-colors">About</a>
+                    <a href="/services.html"
+                        class="text-[#102A43] font-medium hover:text-[#49B6A3] transition-colors">Services</a>
+                    <a href="/destinations.html"
+                        class="text-[#102A43] font-medium hover:text-[#49B6A3] transition-colors">Destinations</a>
+                    <a href="/contact.html"
+                        class="text-[#49B6A3] font-bold hover:text-[#49B6A3] transition-colors">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden flex flex-col space-y-1.5 p-2">
+                    <span class="hamburger-line w-6 h-0.5 bg-[#102A43] rounded"></span>
+                    <span class="hamburger-line w-6 h-0.5 bg-[#102A43] rounded"></span>
+                    <span class="hamburger-line w-6 h-0.5 bg-[#102A43] rounded"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden hidden mt-4 pb-3">
+                <div class="flex flex-col space-y-4">
+                    <a href="/index.html"
+                        class="text-[#102A43] font-medium hover:text-[#49B6A3] transition-colors py-2 border-b border-gray-100">Home</a>
+                    <a href="/about"
+                        class="text-[#102A43] font-medium hover:text-[#49B6A3] transition-colors py-2 border-b border-gray-100">About</a>
+                    <a href="/services.html"
+                        class="text-[#102A43] font-medium hover:text-[#49B6A3] transition-colors py-2 border-b border-gray-100">Services</a>
+                    <a href="/destinations.html"
+                        class="text-[#102A43] font-medium hover:text-[#49B6A3] transition-colors py-2 border-b border-gray-100">Destinations</a>
+                    <a href="/contact.html"
+                        class="text-[#49B6A3] font-bold hover:text-[#49B6A3] transition-colors py-2 border-b border-gray-100">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Us Page -->
+    <section class="min-h-screen bg-white">
+        <!-- A. Hero Section -->
+        <section class="relative py-8 md:py-12">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                <div class="relative bg-white rounded-2xl shadow-2xl overflow-hidden h-[400px] md:h-[500px] w-full">
+                    <!-- Background Image with Overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-black/60 z-0"></div>
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                        alt="Professional team meeting" 
+                        class="absolute inset-0 w-full h-full object-cover z-0">
+                    
+                    <!-- Content Container -->
+                    <div class="relative z-10 h-full flex items-center">
+                        <div class="w-full px-6 md:px-10 lg:px-12">
+                            <div class="max-w-3xl">
+                                <h1 class="text-4xl md:text-5xl lg:text-6xl font-montserrat font-bold text-white mb-6 leading-tight">
+                                    Get in Touch for Your Giant Stride
+                                </h1>
+                                <p class="text-xl md:text-2xl text-gray-200 mb-6 leading-relaxed">
+                                    Our team is ready to listen, plan, and simplify your next journey. Reach out—we're here to help.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- B. Contact Options Hub -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Call & WhatsApp Card -->
+                        <div class="bg-gradient-to-br from-[#102A43]/5 to-[#49B6A3]/5 rounded-2xl p-8 border border-gray-100 card-hover">
+                            <div class="w-16 h-16 rounded-full bg-gradient-to-r from-[#7FC843] to-[#49B6A3] flex items-center justify-center mb-6">
+                                <span class="text-3xl text-white">📞</span>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4 text-[#102A43]">Speak Directly</h3>
+                            <p class="text-[#4A4A4A] mb-4">
+                                Available during business hours for immediate inquiries.
+                            </p>
+                            <div class="mb-6">
+                                <p class="text-xl font-bold text-[#102A43]">0814 357 6329</p>
+                            </div>
+                            <div class="flex flex-col space-y-3">
+                                <a href="tel:+2348143576329" 
+                                class="btn-primary text-center py-3 rounded-xl font-semibold hover:scale-105 transition-transform">
+                                    Call Now
+                                </a>
+                                <a href="https://wa.me/2348143576329?text=Hello%20Huda%20Giant%20Stride,%20I%20would%20like%20to%20inquire%20about%20your%20travel%20services" 
+                                target="_blank"
+                                class="bg-[#25D366] text-white text-center py-3 rounded-xl font-semibold hover:bg-[#1da851] transition-colors hover:scale-105 transition-transform">
+                                    Message on WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Email Card -->
+                        <div class="bg-gradient-to-br from-[#49B6A3]/5 to-[#7FC843]/5 rounded-2xl p-8 border border-gray-100 card-hover">
+                            <div class="w-16 h-16 rounded-full bg-gradient-to-r from-[#49B6A3] to-[#102A43] flex items-center justify-center mb-6">
+                                <span class="text-3xl text-white">✉️</span>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4 text-[#102A43]">Send a Detailed Inquiry</h3>
+                            <p class="text-[#4A4A4A] mb-4">
+                                Ideal for package requests, proposals, and detailed planning.
+                            </p>
+                            <div class="mb-6">
+                                <p class="text-xl font-bold text-[#102A43]">contact@hudagiantstride.com</p>
+                            </div>
+                            <div class="flex flex-col space-y-3">
+                                <a href="mailto:contact@hudagiantstride.com" 
+                                class="btn-primary text-center py-3 rounded-xl font-semibold hover:scale-105 transition-transform">
+                                    Send an Email
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Visit Us Card -->
+                        <div class="bg-gradient-to-br from-[#7FC843]/5 to-[#102A43]/5 rounded-2xl p-8 border border-gray-100 card-hover">
+                            <div class="w-16 h-16 rounded-full bg-gradient-to-r from-[#102A43] to-[#7FC843] flex items-center justify-center mb-6">
+                                <span class="text-3xl text-white">📍</span>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4 text-[#102A43]">Our Office</h3>
+                            <p class="text-[#4A4A4A] mb-4">
+                                We welcome scheduled consultations.
+                            </p>
+                            <div class="mb-6">
+                                <p class="text-lg font-medium text-[#102A43]">
+                                    Suite 408, Obum Plaza, Adetokunbo Ademola Crescent, Wuse 2, Abuja
+                                </p>
+                            </div>
+                            <div class="flex flex-col space-y-3">
+                                <a href="https://www.google.com/maps/search/?api=1&query=Suite+408+Obum+Plaza+Adetokunbo+Ademola+Crescent+Wuse+2+Abuja" 
+                                target="_blank"
+                                class="btn-primary text-center py-3 rounded-xl font-semibold hover:scale-105 transition-transform">
+                                    Get Directions
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- C. Inquiry Form Section -->
+        <section class="py-16 md:py-24 bg-[#F8F9FA]">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12 border border-gray-100">
+                        <div class="text-center mb-10">
+                            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-[#102A43]">Send Us a Message</h2>
+                            <p class="text-xl text-[#4A4A4A]">
+                                Fill out the form below, and our dedicated travel consultant will respond within 24 hours.
+                            </p>
+                        </div>
+                        
+                        <form id="contactForm" class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <!-- Full Name -->
+                                <div>
+                                    <label for="fullName" class="block text-sm font-medium text-[#102A43] mb-2">
+                                        Full Name <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" 
+                                        id="fullName" 
+                                        name="fullName"
+                                        required
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#49B6A3] focus:border-transparent transition-all">
+                                    <div class="text-xs text-red-500 mt-1 hidden" id="nameError">Please enter your full name</div>
+                                </div>
+                                
+                                <!-- Email Address -->
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-[#102A43] mb-2">
+                                        Email Address <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="email" 
+                                        id="email" 
+                                        name="email"
+                                        required
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#49B6A3] focus:border-transparent transition-all">
+                                    <div class="text-xs text-red-500 mt-1 hidden" id="emailError">Please enter a valid email address</div>
+                                </div>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <!-- Phone Number -->
+                                <div>
+                                    <label for="phone" class="block text-sm font-medium text-[#102A43] mb-2">
+                                        Phone Number <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="tel" 
+                                        id="phone" 
+                                        name="phone"
+                                        required
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#49B6A3] focus:border-transparent transition-all">
+                                    <div class="text-xs text-red-500 mt-1 hidden" id="phoneError">Please enter a valid phone number</div>
+                                </div>
+                                
+                                <!-- Service Interest -->
+                                <div>
+                                    <label for="service" class="block text-sm font-medium text-[#102A43] mb-2">
+                                        Service Interest <span class="text-red-500">*</span>
+                                    </label>
+                                    <select id="service" 
+                                            name="service"
+                                            required
+                                            class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#49B6A3] focus:border-transparent transition-all appearance-none">
+                                        <option value="" disabled selected>Select a service</option>
+                                        <option value="umrah-hajj">Umrah/Hajj</option>
+                                        <option value="educational-tours">Educational Tours</option>
+                                        <option value="family-leisure">Family & Leisure</option>
+                                        <option value="business-travel">Business Travel</option>
+                                        <option value="domestic-nigeria">Domestic Nigeria</option>
+                                        <option value="flight-hotel">Flight/Hotel Booking</option>
+                                        <option value="visa-assistance">Visa Assistance</option>
+                                        <option value="general-inquiry">General Inquiry</option>
+                                    </select>
+                                    <div class="text-xs text-red-500 mt-1 hidden" id="serviceError">Please select a service interest</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Subject -->
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-[#102A43] mb-2">
+                                    Subject
+                                </label>
+                                <input type="text" 
+                                    id="subject" 
+                                    name="subject"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#49B6A3] focus:border-transparent transition-all">
+                            </div>
+                            
+                            <!-- Message -->
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-[#102A43] mb-2">
+                                    Your Message <span class="text-red-500">*</span>
+                                </label>
+                                <textarea id="message" 
+                                        name="message"
+                                        rows="5"
+                                        required
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#49B6A3] focus:border-transparent transition-all"></textarea>
+                                <div class="text-xs text-red-500 mt-1 hidden" id="messageError">Please enter your message</div>
+                            </div>
+                            
+                            <!-- Privacy Note -->
+                            <div class="bg-[#F8F9FA] p-4 rounded-xl border border-gray-200">
+                                <div class="flex items-start">
+                                    <i class="fas fa-shield-alt text-[#49B6A3] mt-1 mr-3"></i>
+                                    <p class="text-sm text-[#4A4A4A]">
+                                        Your information is secure and will only be used to respond to your inquiry. We respect your privacy.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Submit Button -->
+                            <div>
+                                <button type="submit" 
+                                        id="submitBtn"
+                                        class="btn-primary w-full py-4 rounded-xl font-bold text-lg hover:scale-105 transition-transform">
+                                    <span id="submitText">Send Message</span>
+                                    <div id="submitLoading" class="hidden">
+                                        <div class="flex items-center justify-center">
+                                            <div class="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin mr-2"></div>
+                                            <span>Sending...</span>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            
+                            <!-- Success/Error Message -->
+                            <div id="formMessage" class="hidden p-4 rounded-xl"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- D. Location & Hours Section -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <!-- Column 1: Map -->
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6 text-[#102A43]">Find Us in Abuja</h2>
+                            
+                            <!-- Google Map Container -->
+                            <div class="rounded-2xl overflow-hidden shadow-lg border border-gray-200 h-[400px]">
+                                <div id="map" class="w-full h-full">
+                                    <!-- Fallback image if map fails to load -->
+                                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                        alt="Abuja map location" 
+                                        class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            
+                            <!-- Map Instructions -->
+                            <div class="mt-4 text-sm text-[#4A4A4A] flex items-center">
+                                <i class="fas fa-info-circle text-[#49B6A3] mr-2"></i>
+                                <span>Click and drag to explore the map, or use the +/- buttons to zoom</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Column 2: Business Hours -->
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6 text-[#102A43]">Business Hours</h2>
+                            
+                            <div class="bg-gradient-to-br from-[#F8F9FA] to-white rounded-2xl p-8 border border-gray-200">
+                                <!-- Schedule -->
+                                <div class="space-y-6 mb-8">
+                                    <div class="flex justify-between items-center pb-4 border-b border-gray-200">
+                                        <div>
+                                            <h4 class="font-bold text-lg text-[#102A43]">Monday – Friday</h4>
+                                            <p class="text-[#4A4A4A]">Standard business hours</p>
+                                        </div>
+                                        <div class="text-right">
+                                            <p class="font-bold text-lg text-[#49B6A3]">9:00 AM – 5:00 PM</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex justify-between items-center pb-4 border-b border-gray-200">
+                                        <div>
+                                            <h4 class="font-bold text-lg text-[#102A43]">Saturday</h4>
+                                            <p class="text-[#4A4A4A]">Limited hours</p>
+                                        </div>
+                                        <div class="text-right">
+                                            <p class="font-bold text-lg text-[#49B6A3]">10:00 AM – 2:00 PM</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <h4 class="font-bold text-lg text-[#102A43]">Sunday</h4>
+                                            <p class="text-[#4A4A4A]">Office closed</p>
+                                        </div>
+                                        <div class="text-right">
+                                            <p class="font-bold text-lg text-gray-400">Closed</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Additional Note -->
+                                <div class="bg-[#102A43]/5 p-4 rounded-xl">
+                                    <div class="flex items-start">
+                                        <i class="fas fa-clock text-[#102A43] mt-1 mr-3"></i>
+                                        <div>
+                                            <h4 class="font-bold text-[#102A43] mb-1">Outside these hours?</h4>
+                                            <p class="text-sm text-[#4A4A4A]">
+                                                Please use the email form, and we'll get back to you at the start of the next business day. Your trusted partner in travel.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Additional Contact Info -->
+                            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="flex items-center p-4 bg-[#F8F9FA] rounded-xl">
+                                    <i class="fas fa-phone-alt text-[#49B6A3] text-xl mr-4"></i>
+                                    <div>
+                                        <p class="text-sm text-[#4A4A4A]">Phone</p>
+                                        <p class="font-bold text-[#102A43]">0814 357 6329</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center p-4 bg-[#F8F9FA] rounded-xl">
+                                    <i class="fas fa-envelope text-[#49B6A3] text-xl mr-4"></i>
+                                    <div>
+                                        <p class="text-sm text-[#4A4A4A]">Email</p>
+                                        <p class="font-bold text-[#102A43]">contact@hudagiantstride.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- E. Pre-Contact FAQ -->
+        <section class="py-16 md:py-24 bg-[#F8F9FA]">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-[#102A43]">Common Questions Before You Contact Us</h2>
+                        <p class="text-xl text-[#4A4A4A]">
+                            Your trusted partner for simplified travel planning
+                        </p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <!-- FAQ Item 1 -->
+                        <div class="bg-white rounded-2xl overflow-hidden border border-gray-200">
+                            <button class="faq-question w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors">
+                                <span class="text-lg font-semibold text-[#102A43]">
+                                    How quickly will I receive a response to my inquiry?
+                                </span>
+                                <i class="fas fa-chevron-down text-[#49B6A3] transition-transform"></i>
+                            </button>
+                            <div class="faq-answer p-6 pt-0 hidden">
+                                <div class="border-t border-gray-200 pt-6">
+                                    <p class="text-[#4A4A4A]">
+                                        We aim to acknowledge all inquiries within 2 hours during business days and provide a detailed response within 24 hours. For urgent matters, calling us directly is the fastest option.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 2 -->
+                        <div class="bg-white rounded-2xl overflow-hidden border border-gray-200">
+                            <button class="faq-question w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors">
+                                <span class="text-lg font-semibold text-[#102A43]">
+                                    Do I need to know my exact travel dates to get a quote?
+                                </span>
+                                <i class="fas fa-chevron-down text-[#49B6A3] transition-transform"></i>
+                            </button>
+                            <div class="faq-answer p-6 pt-0 hidden">
+                                <div class="border-t border-gray-200 pt-6">
+                                    <p class="text-[#4A4A4A]">
+                                        Not at all. We can provide guidance on ideal times to travel based on your goals, destination, and budget. Our consultants will help you find the perfect travel window that balances cost, weather, and availability.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 3 -->
+                        <div class="bg-white rounded-2xl overflow-hidden border border-gray-200">
+                            <button class="faq-question w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors">
+                                <span class="text-lg font-semibold text-[#102A43]">
+                                    What information should I have ready when I contact you?
+                                </span>
+                                <i class="fas fa-chevron-down text-[#49B6A3] transition-transform"></i>
+                            </button>
+                            <div class="faq-answer p-6 pt-0 hidden">
+                                <div class="border-t border-gray-200 pt-6">
+                                    <p class="text-[#4A4A4A]">
+                                        It helps to know your destination interests, number of travelers, approximate travel period, and budget range. Don't worry—we'll guide you through the rest. Even if you're just starting to dream about your journey, we can help shape those ideas into a concrete plan.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 4 (Additional) -->
+                        <div class="bg-white rounded-2xl overflow-hidden border border-gray-200">
+                            <button class="faq-question w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors">
+                                <span class="text-lg font-semibold text-[#102A43]">
+                                    Are your services more expensive than booking directly?
+                                </span>
+                                <i class="fas fa-chevron-down text-[#49B6A3] transition-transform"></i>
+                            </button>
+                            <div class="faq-answer p-6 pt-0 hidden">
+                                <div class="border-t border-gray-200 pt-6">
+                                    <p class="text-[#4A4A4A]">
+                                        Actually, our services often save you money. We have access to wholesale rates, exclusive deals, and our expertise helps avoid costly mistakes. Plus, we provide value through time savings, stress reduction, and personalized service that direct booking can't match. Our transparent pricing means no hidden fees.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- F. Final Assurance CTA -->
+        <section class="py-16 md:py-24 bg-gradient-to-r from-[#102A43] to-[#1a365d] text-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Your Journey Begins with a Conversation</h2>
+                    <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-10">
+                        Trust Huda Giant Stride to handle the details with clarity and precision. Your trusted partner for simplified travel planning.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                        <a href="#services" 
+                        class="btn-primary inline-block px-10 py-4 rounded-full font-bold text-lg shadow-xl transform transition-transform hover:scale-105">
+                            View Our Services
+                        </a>
+                        <a href="#contactForm" 
+                        class="inline-block px-10 py-4 rounded-full font-bold text-lg bg-white/10 backdrop-blur-sm border border-white/30 text-white hover:bg-white/20 transition-all">
+                            Send Another Message
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0A1929] text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <!-- Column 1: Logo & Mission -->
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="w-20 h-20 flex items-center justify-center mr-3">
+                            <img src="./img/logo.jpg" alt="">
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6">Giant Strides. Global Reach. We navigate the complexities of global
+                        travel so you can focus on what matters most.</p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-[#102A43] flex items-center justify-center hover:bg-[#49B6A3] transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-[#102A43] flex items-center justify-center hover:bg-[#49B6A3] transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-[#102A43] flex items-center justify-center hover:bg-[#49B6A3] transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-[#102A43] flex items-center justify-center hover:bg-[#49B6A3] transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-[#49B6A3]">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="/index.html" class="text-gray-300 hover:text-[#7FC843] transition-colors">Home</a></li>
+                        <li><a href="/about.html" class="text-gray-300 hover:text-[#7FC843] transition-colors">About Us</a>
+                        </li>
+                        <li><a href="/services.html" class="text-gray-300 hover:text-[#7FC843] transition-colors">Our
+                                Services</a></li>
+                        <li><a href="/destinations.html"
+                                class="text-gray-300 hover:text-[#7FC843] transition-colors">Destinations</a></li>
+                        <li><a href="/contact.html" class="text-gray-300 hover:text-[#7FC843] transition-colors">Contact
+                                Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact Info -->
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-[#49B6A3]">Contact Info</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-[#7FC843] mr-3 mt-1"></i>
+                            <span class="text-gray-300">123 Travel Street, Global City, GC 10001</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone text-[#7FC843] mr-3"></i>
+                            <span class="text-gray-300">+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-[#7FC843] mr-3"></i>
+                            <span class="text-gray-300">info@giantstride-travel.com</span>
+                        </li>
+                        <li class="flex items-start mt-6">
+                            <i class="fas fa-clock text-[#7FC843] mr-3 mt-1"></i>
+                            <div>
+                                <p class="text-gray-300 font-semibold">Business Hours</p>
+                                <p class="text-gray-400 text-sm">Mon-Fri: 9am-6pm</p>
+                                <p class="text-gray-400 text-sm">Sat: 10am-4pm</p>
+                                <p class="text-gray-400 text-sm">Sun: Closed</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="pt-8 border-t border-gray-800">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">&copy; 2023 GIANT STRIDE Travel & Tours Ltd. All
+                        rights reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-[#7FC843] text-sm transition-colors">Privacy
+                            Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-[#7FC843] text-sm transition-colors">Terms of
+                            Service</a>
+                        <a href="#" class="text-gray-400 hover:text-[#7FC843] text-sm transition-colors">Cookie
+                            Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/script.js"></script>
+    <script src="./js/contact.js"></script>
+</body>
+
+</html>
